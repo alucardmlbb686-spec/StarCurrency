@@ -25,4 +25,5 @@ RUN composer install --no-interaction --no-plugins --no-scripts --prefer-dist --
 
 EXPOSE 8080
 
-CMD ["sh", "-c", "php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=${PORT:-8080}"]
+# Start the app and try to run migrations, but continue even if DB is not ready yet
+CMD ["sh", "-c", "php artisan migrate --force 2>/dev/null || true && php artisan serve --host=0.0.0.0 --port=${PORT:-8080}"]
