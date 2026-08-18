@@ -18,9 +18,6 @@ RUN apt-get update && apt-get install -y \
 COPY . /var/www
 
 RUN composer install --no-interaction --no-plugins --no-scripts --prefer-dist --optimize-autoloader \
-    && php artisan config:cache \
-    && php artisan route:cache \
-    && php artisan view:cache \
     && chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 
 EXPOSE 8080
