@@ -1,0 +1,26 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d1524"/>
+      <stop offset="100%" stop-color="#1b2230"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#d9b36d"/>
+      <stop offset="100%" stop-color="#f5d7a5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg1)"/>
+  <circle cx="1340" cy="180" r="180" fill="#d9b36d" opacity="0.12"/>
+  <circle cx="250" cy="740" r="220" fill="#7b6fe0" opacity="0.08"/>
+  <g opacity="0.8">
+    <path d="M220 700 L560 260 L900 700" stroke="url(#accent1)" stroke-width="5" fill="none"/>
+    <path d="M830 700 L1180 260 L1460 700" stroke="#e9edf6" stroke-width="2.5" fill="none" opacity="0.7"/>
+  </g>
+  <g>
+    <rect x="190" y="150" width="240" height="240" rx="32" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.15)"/>
+    <path d="M260 300L350 180L440 300" stroke="#d9b36d" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="350" cy="220" r="18" fill="#d9b36d"/>
+  </g>
+  <text x="190" y="650" fill="#f5f3ef" font-size="88" font-family="Georgia, serif" font-weight="700">MERIDIAN</text>
+  <text x="190" y="710" fill="#d5d9e0" font-size="28" font-family="Arial, sans-serif" letter-spacing="7">TREASURY OPERATIONS</text>
+</svg>
